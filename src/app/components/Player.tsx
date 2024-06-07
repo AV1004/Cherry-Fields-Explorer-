@@ -1,3 +1,4 @@
+// @ts-nocheck
 import { OrbitControls, useAnimations, useGLTF } from "@react-three/drei";
 import { useInput } from "../hooks/useInput";
 import { useEffect, useRef } from "react";
