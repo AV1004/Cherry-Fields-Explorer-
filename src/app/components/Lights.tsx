@@ -5,15 +5,15 @@ import { DirectionalLight, DirectionalLightHelper } from "three";
 export const Lights: React.FC<{ isTesting: boolean }> = ({ isTesting }) => {
   const lightRef = useRef<DirectionalLight>();
 
-  if (isTesting === true) {
-    useHelper(lightRef, DirectionalLightHelper, 5, "red");
-  }
+  // if (isTesting === true) {
+  //   useHelper(lightRef, DirectionalLightHelper, 5, "red");
+  // }
 
   return (
     <>
       <ambientLight intensity={1} />
       <directionalLight
-        ref={lightRef}
+        // ref={lightRef}
         intensity={3}
         position={[0, 60, 80]}
         castShadow
